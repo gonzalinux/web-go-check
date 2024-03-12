@@ -1,7 +1,7 @@
 # web-go-check
-This is a small tool that will curl all the urls that you specify in `main.go` in the interval that you prefer.
+This is a small tool that will curl all the urls that you specify in [`main.go`](https://github.com/gonzalinux/web-go-check/blob/ebec5ae00357c9700770cf6d69b1951bcb45d13c/main.go#L33) in the [interval](https://github.com/gonzalinux/web-go-check/blob/ebec5ae00357c9700770cf6d69b1951bcb45d13c/main.go#L10) that you prefer.
 
-If an error ocurred in one of the urls, and the credentials.json file is correctly filled, the program will send an email to a selected address
+If an error ocurred in one of the urls, and the [`credentials.json`](https://github.com/gonzalinux/web-go-check/blob/master/credentials.json) file is correctly filled, the program will send an email to a [selected address](https://github.com/gonzalinux/web-go-check/blob/ebec5ae00357c9700770cf6d69b1951bcb45d13c/main.go#L9)
 
 To run this program:
 ```
