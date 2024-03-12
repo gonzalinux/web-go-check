@@ -23,7 +23,7 @@ func checkUrl(url string) (bool, error) {
 	}
 	defer resp.Body.Close()
 	if resp.StatusCode != http.StatusOK {
-		return false, fmt.Errorf("received status code not equal to 200: %d", resp.StatusCode) // Not successful, but not necessarily an error (informational)
+		return false, fmt.Errorf("received status code not equal to 200: %d", resp.StatusCode)
 	}
 	return true, nil
 }
