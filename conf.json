@@ -1,0 +1,5 @@
+{
+    "urls": ["https://url1", "https://url2:2999/route", "https://url3.com/"],
+    "intervalMinutes": 1,
+    "emailTo": "emailHere@email.email"
+}

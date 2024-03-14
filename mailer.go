@@ -33,7 +33,6 @@ func init() {
 func SendMail(message string, to string, subject string) error {
 
 	if credentials == nil {
-		fmt.Println("There was no credentials, not sending email.")
 		return nil
 	}
 
@@ -113,5 +112,30 @@ func FormatErrorEmail(url string, message string) string {
 	<h1>The url <a href"%s">%s</a> is down with the following error:</h1>
 	<p>%s</p>
 	`, styletag, date, url, url, strings.ReplaceAll(message, "\n", "<br>"))
+
+}
+
+func FormatUpEmail(url string) string {
+	styletag := `<style>
+	span {
+		font-family:roboto;
+		font-size: 1rem;
+		color: green;
+	}
+	a{
+		font-size: inherit;
+		color: blue;
+	}
+	h1 {
+		font-size: 1.5rem;
+		color: black;
+	}
+</style>`
+
+	date := time.Now().Format("2006-01-02 15:04:05")
+	return fmt.Sprintf(`%s
+<span>%s</span>
+<h1>The url <a href"%s">%s</a> is is up again</h1>
+`, styletag, date, url, url)
 
 }
