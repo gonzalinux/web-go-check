@@ -1,5 +1,5 @@
 # web-go-check
-This is a small tool that will curl all the urls that you specify in `[conf.json](https://github.com/gonzalinux/web-go-check/blob/master/credentials.json)` in the interval that you prefer.
+This is a small tool that will curl all the urls that you specify in [`conf.json`](https://github.com/gonzalinux/web-go-check/blob/master/credentials.json) in the interval that you prefer.
 
 Example of configuration file conf.json
 ```
